@@ -9,14 +9,15 @@ int Request(string message)
     return req;
 }
 
-int Exponentiation(double num, double deg)
+int Exponentiation(int num, int deg)
 {
-    double result = 0;
-    for (int i = 1; num > i; i += 1)
+    int result = 1;
+    for (int i = 0; i < deg; i++)
     {
-        result = Math.Pow(num, deg);;
+        result *= num;
+        
     }
-    return Convert.ToInt32(result);
+    return result;
 }
 
 int a = Request("Введите число 'A'");
